@@ -1,0 +1,122 @@
+<DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Latitude Weather Analysis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Latitude</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="Temp.html">Temperature</a>
+                            </li>
+                            <li>
+                                <a href="humidity.html">Humidity</a>
+                            </li>
+                            <li>
+                                <a href="cloudiness.html">Cloudiness</a>
+                            </li>
+                            <li>
+                                <a href="wind.html">Wind Speed</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comparison.html">Comparison</a>
+                    </li>
+                    <li>
+                        <a href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="col-md-12">
+                <div class="sigline">
+                    <p>
+                        Data Analytics and Visualization - Tec de Monterrey - Osvaldo Alvarez 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12">
+                <h1>Summary: Latitude vs. X</h1>
+                <hr>
+                <br>
+                <img src="MaxTemp_vs_Latitude.png" alt="maxtemp" height="200" width="200" align = "left">
+                <p>In this project we analyzed the change in weather as one gets closer to the Equator. 
+                    For doing this analysis, we obtained data from the OpenWeatherMap API and created a dataset of more than 500 cities.
+                </p>
+                <p>Once we had the information from the API and the dataset, we used MatplotLib to plot different weather factors vs latitude. The factors we compared vs latitude were:
+                temperature, humidity, cloudiness and wind speed.  In this dashboard you can see the dataset and the different visualizations that resulted from the analysis.
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <h2>Visualizations</h2>
+                <hr>
+                    <div class= "col-md-6 col-sm-3">
+                        <img id ="pic1" src="MaxTemp_vs_Latitude.png" alt="maxtemp" height="150" width="150"> 
+                    </div> 
+                    <div class= "col-md-6 col-sm-3">
+                        <img id ="pic2" src="Humidity_vs_Latitude.png" alt="humidity" height="150" width="150">
+                    </div> 
+                    <div class= "col-md-6 col-sm-3">
+                        <img id = "pic3" src="Cloudiness_vs_Latitude.png" alt="cloudiness" height="150" width="150">
+                    </div> 
+                    <div class= "col-md-6 col-sm-3">
+                        <img id = "pic4" src="Wind_Speed_vs_Latitude.png" alt="windspeed" height="150" width="150">
+                    </div> 
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
